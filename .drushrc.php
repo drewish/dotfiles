@@ -61,6 +61,8 @@ $options['structure-tables'] = array(
 // Use cvs checkouts when downloading and updating modules.
 // An example of a command specific argument being set in drushrc.php
 $options['package-handler'] = 'cvs';
+#$options['cvscredentials'] = 'drewish:password';
+
 
 /**
  * Variable overrides:
