@@ -19,12 +19,14 @@ set path = ($path ~/bin)
 setenv	EDITOR	vim
 setenv	PAGER	less
 setenv	BLOCKSIZE	K
-setenv  JAVA_HOME /System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
-setenv  JRE_HOME  /System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
 
 if ('darwin' == $OSTYPE) then
 	setenv  PATH /opt/local/bin:/opt/local/sbin:$PATH
 	#alias drush '/Applications/MAMP/bin/php5.2/bin/php /Users/amorton/bin/drush-HEAD/drush.php'
+
+	# Some OSX specific java settings
+	setenv  JAVA_HOME /System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
+	setenv  JRE_HOME  /System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
 endif
 
 if ($?prompt) then
