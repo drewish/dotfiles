@@ -20,6 +20,8 @@ setenv	EDITOR	vim
 setenv	PAGER	less
 setenv	BLOCKSIZE	K
 
+setenv	RUBYOPT	rubygems
+
 if ('darwin' == $OSTYPE) then
 	setenv  PATH /opt/local/bin:/opt/local/sbin:$PATH
 	#alias drush '/Applications/MAMP/bin/php5.2/bin/php /Users/amorton/bin/drush-HEAD/drush.php'
