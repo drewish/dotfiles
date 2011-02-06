@@ -23,7 +23,7 @@ setenv	BLOCKSIZE	K
 setenv	RUBYOPT	rubygems
 
 if ('darwin' == $OSTYPE) then
-	setenv  PATH /opt/local/bin:/opt/local/sbin:$PATH
+	setenv  PATH /opt/local/bin:/opt/local/sbin:{$PATH}:{$HOME/.gem/ruby/1.8/bin}
 	#alias drush '/Applications/MAMP/bin/php5.2/bin/php /Users/amorton/bin/drush-HEAD/drush.php'
 
 	# Some OSX specific java settings
