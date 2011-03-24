@@ -64,10 +64,10 @@
 # $options['c'] = '.';
 
 // Specify CVS for checkouts
-$options['package-handler'] = 'cvs';
+$options['package-handler'] = 'git_drupalorg';
 
 // Specify CVS credentials for checkouts (requires --package-handler=cvs)
-# $options['cvscredentials'] = 'drewish:password';
+$options['gitusername'] = 'drewish';
 
 // Specify additional directories to search for *.drush.inc files
 // Use POSIX path separator (':')
