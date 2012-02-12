@@ -1,0 +1,6 @@
+[user]
+	name = andrew morton
+	email = drewish@katherinehouse.com
+[color]
+	ui = auto # covers diff = true, status = auto, branch = auto
+	interactive = auto
