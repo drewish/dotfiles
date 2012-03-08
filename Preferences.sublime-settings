@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+  "font_face": "Andale Mono",
+	"font_size": 18.0,
+  "font_options": ["no_round"],
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "use_tab_stops": true,
+  "trim_trailing_white_space_on_save": true,
+  "rulers": [80]
+}
