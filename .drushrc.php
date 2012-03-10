@@ -166,3 +166,5 @@ $options['skip-tables'] = array(
 #   'theme_default' => 'minnelli',
 #   'anonymous' => 'Visitor',
 # );
+
+ini_set('memory_limit', '-1');
