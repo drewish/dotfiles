@@ -1,0 +1,31 @@
+# Mine...
+
+alias ls        ls -G
+alias la        ls -a
+alias lf        ls -FA
+alias ll        ls -lA
+
+setenv  EDITOR  vim
+setenv  PAGER   less
+
+# Tell OSX Terminal about the current working directory.
+# http://www.sreinhold.com/files/keep_working_dir_new_tab_terminal_lion_tcsh.html
+switch ($TERM)
+    case "xterm*":
+    alias precmd 'printf "\033]0;$cwd\007"'
+    breaksw
+endsw
+
+if ($?prompt) then
+        # An interactive shell -- set some stuff up
+        set filec
+        set history = 1000
+        set savehist = 1000
+        if ( $?tcsh) then
+                bindkey "^W" backward-delete-word
+                bindkey -k up history-search-backward
+                bindkey -k down history-search-forward
+                set prompt = "%n@%m:%~%# "
+        endif
+endif
+
