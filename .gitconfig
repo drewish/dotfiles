@@ -4,3 +4,11 @@
 [color]
     ui = auto # covers diff = true, status = auto, branch = auto
     interactive = auto
+[push]
+    default = simple
+[branch]
+    autosetuprebase = always
+[core]
+    whitespace = warn
+[rerere]
+    enabled = true
