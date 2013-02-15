@@ -10,5 +10,6 @@
     autosetuprebase = always
 [core]
     whitespace = warn
+    excludesfile = ~/.gitexcludes
 [rerere]
     enabled = true
