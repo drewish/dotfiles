@@ -16,6 +16,13 @@ switch ($TERM)
     breaksw
 endsw
 
+if ('darwin' == $OSTYPE) then
+    setenv  PATH {$HOME}/.rbenv/shims:{$HOME}/.rbenv/bin:{$HOME}/bin:/usr/local/bin:/usr/local/sbin:{$PATH}:/usr/local/share/npm/bin
+    rbenv rehash
+
+    setenv RUBYOPT "-Ku"
+endif
+
 if ($?prompt) then
         # An interactive shell -- set some stuff up
         set filec
