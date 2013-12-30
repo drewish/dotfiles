@@ -1,18 +1,42 @@
 {
+	"caret_extra_bottom": 4,
+	"caret_extra_top": 4,
+	"caret_extra_width": 2,
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
 		".tags",
 		".tags_sorted_by_file",
-		".gitignore"
+		".gitignore",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db"
 	],
 	"font_face": "Andale Mono",
 	"font_options":
 	[
 		"no_round"
 	],
-	"font_size": 18.0,
+	"font_size": 17.0,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
