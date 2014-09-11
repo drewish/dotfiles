@@ -8,11 +8,13 @@ alias ll        ls -lA
 setenv  EDITOR  vim
 setenv  PAGER   less
 
+alias __git_current_branch 'git rev-parse --abbrev-ref HEAD >& /dev/null && echo " (`git rev-parse --abbrev-ref HEAD`)"'
+
 # Tell OSX Terminal about the current working directory.
 # http://www.sreinhold.com/files/keep_working_dir_new_tab_terminal_lion_tcsh.html
 switch ($TERM)
     case "xterm*":
-    alias precmd 'printf "\033]0;$cwd\007"'
+    alias precmd 'set prompt="%n@%m:%~`__git_current_branch`%# "; printf "\033]0;$cwd\007"'
     breaksw
 endsw
 
