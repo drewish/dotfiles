@@ -4,12 +4,15 @@ alias ls        ls -G
 alias la        ls -a
 alias lf        ls -FA
 alias ll        ls -lA
+alias be        bundle exec
 
 setenv  EDITOR  vim
 setenv  PAGER   less
 
 alias git-clean 'git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 alias __git_current_branch 'git rev-parse --abbrev-ref HEAD >& /dev/null && echo " (`git rev-parse --abbrev-ref HEAD`)"'
+alias gsgp 'git stash && git pull && git stash pop'
+alias docker-clean 'docker rmi `docker images | grep "<none>" | awk '\''{ print $3; }'\''`'
 
 # Tell OSX Terminal about the current working directory.
 # http://www.sreinhold.com/files/keep_working_dir_new_tab_terminal_lion_tcsh.html
@@ -21,9 +24,9 @@ endsw
 
 if ('darwin' == $OSTYPE) then
     setenv  PATH {$HOME}/.rbenv/shims:{$HOME}/.rbenv/bin:{$HOME}/bin:/usr/local/bin:/usr/local/sbin:{$PATH}:/usr/local/share/npm/bin
-    rbenv rehash
 
     setenv RUBYOPT "-Ku"
+    setenv GITHUB_TOKEN 73681f3150a00dc9be6c30b422df0e4d8b2ded2e
 endif
 
 if ($?prompt) then
