@@ -24,9 +24,6 @@ endsw
 
 if ('darwin' == $OSTYPE) then
     setenv  PATH {$HOME}/.rbenv/shims:{$HOME}/.rbenv/bin:{$HOME}/bin:/usr/local/bin:/usr/local/sbin:{$PATH}:/usr/local/share/npm/bin
-
-    setenv RUBYOPT "-Ku"
-    setenv GITHUB_TOKEN 73681f3150a00dc9be6c30b422df0e4d8b2ded2e
 endif
 
 if ($?prompt) then
